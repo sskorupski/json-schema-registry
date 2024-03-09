@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/sskorupski/json-schema-registry/main/schemas/erc-721.json",
+  "$id": "https://sskorupski.github.io/json-schema-registry/schemas/erc-721.json",
   "title": "ERC721 Metadata JSON Schema",
   "description": "This JSON Schema is for the ERC721 Metadata Standard, it has been introduced from https://eips.ethereum.org/EIPS/eip-721.",
   "type": "object",
