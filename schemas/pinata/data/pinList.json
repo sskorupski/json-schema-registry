@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "https://sskorupski.github.io/json-schema-registry/schemas/pinata/data/pinList.json",
+  "type": "object",
+  "properties": {
+    "count": {
+      "type": "integer"
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date_pinned": {
+            "type": "string"
+          },
+          "date_unpinned": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "ipfs_pin_hash": {
+            "type": "string"
+          },
+          "metadata": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              }
+            }
+          },
+          "mime_type": {
+            "type": "string"
+          },
+          "number_of_files": {
+            "type": "integer",
+            "enum": [
+              1
+            ]
+          },
+          "regions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "currentReplicationCount": {
+                  "type": "integer"
+                },
+                "desiredReplicationCount": {
+                  "type": "integer"
+                },
+                "regionId": {
+                  "type": "string"
+                }
+              }
+            },
+            "additionalItems": true
+          },
+          "size": {
+            "type": "integer"
+          },
+          "user_id": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalItems": true
+    }
+  }
+}
